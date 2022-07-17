@@ -286,7 +286,7 @@
     <br />
     <br />
     <div style="margin: 0 auto; width:100%; text-align:center; max-width:700px;">
-      <input id="email-input" type="text" value="noteds0001@re1.pl" disabled>
+      <input id="email-input" type="text" onkeyup="setEmail()" onchange="setEmail()" value="noteds0001@re1.pl">
     </div>
     
   </div>
@@ -296,11 +296,39 @@
 
 
 
-<div class="about-bg-1">
-  <span>Made in 2022 <a style="padding: 0 10px;"></a>&lt;3</span>
+
+
+<div class="footer-1">
+  
+  <div class="text-content">
+    <h1>THE_END__</h1>    
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <h1>RE1.PL_</h1>
+      <p>Made in 2022</p>
+      <p>by Dominik Sierechan.</p>
+      <p style="font-size: 40px; line-height: 40%">&lt;3</p>
+    </div>
+    <div class="column" id="hide-on-mobile">
+    </div>
+    <div class="column">
+      <h1>Useful Links_</h1>
+      <p>Login</p>
+      <p>...</p>
+      <p>...</p>
+    </div>
+  </div>
+
 </div>
 
 <script>
+
+function setEmail() {
+  document.getElementById("email-input").value = "noteds0001@re1.pl";
+}
+
   var i = 0;
 var txt = 're1.pl <3';
 var speed = 36;
