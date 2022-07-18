@@ -1,0 +1,32 @@
+noscript {
+    z-index: 99999;
+    background-color: #fdf5df;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden !important;
+    background-image: url(/assets/img/waiting.webp);
+    background-size: cover;
+    background-position-y: -50px;
+    z-index: 9;
+  }
+  noscript span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color:#53a8ae;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #fdf5df;
+    font-size: 40px;
+  }
+  noscript span::after {
+    content: 'Enable javascript to run this page';
+  }
